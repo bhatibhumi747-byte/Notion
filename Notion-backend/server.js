@@ -15,8 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 
-const MONGO_URI = 'mongodb://localhost:27017/notion_club';
-mongoose.connect(MONGO_URI)
+mongoose.connect(process.env.MONGO_URI)
     .then(() => console.log('Database connected successfully!'))
     .catch(err => console.error(err));
 
