@@ -15,7 +15,7 @@ export default function Contact() {
     e.preventDefault(); 
 
     try {
-      const response = await fetch('http://localhost:5000/api/get-in-touch', {
+      const response = await fetch('https://notion-jfmx.onrender.com/api/get-in-touch', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
